@@ -1,0 +1,194 @@
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  * {
+    margin: 0;
+  }
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  input, button, textarea, select {
+    font: inherit;
+  }
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  #root, #__next {
+    isolation: isolate;
+  }
+
+body{
+  font-family: 'Fredoka';
+}
+
+#content{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header{
+    background-color: #14181a;
+    display : flex;
+    justify-content: space-between;
+    align-items: center;;
+    padding: 10px 300px;
+
+}
+
+header > h1 {
+    color: rgb(221, 104, 104);
+    font-size: 50px;
+    font-weight: bold;
+}
+
+nav{
+    display:flex;
+    gap:60px;
+}
+
+button{
+  color: rgb(231, 214, 214);
+  font-size: 20px;
+  font-weight: 600;
+}
+
+nav button{
+  background: none;
+  border: none;
+}
+
+button:hover{
+  cursor: pointer;
+}
+
+nav button:hover{
+  color: rgb(221, 104, 104);
+  transition: 0.5s;
+  transform: scale(1.2);
+}
+
+#body{
+  flex: 1;
+}
+
+#home,
+#contact{
+  height: 100%;
+  background-image: url("./images/patricia-ann-food.jpg");
+  background-size: cover;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.blackOpaqueBox {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.747);
+  border-radius: 10px;
+  padding: 80px 30px;
+  gap:20px;
+}
+
+div > .homeText{
+  color: rgb(221, 104, 104);
+  font-size: 50px;
+  font-weight: 600;
+}
+
+#home > div:first-child > button{
+  height: 50px;
+  width: 160px;
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(109, 36, 36);
+}
+
+#menu{
+  background-color: #fff6da;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#menu > div:first-child{
+  color: #14181a;
+  font-size: 50px;
+  font-weight: 600;
+  display:flex;
+  align-items: center;
+  gap:10px;
+  margin: 20px 0px;
+}
+
+#menu > div:first-child > img {
+  width:70px;
+  height:70px;
+}
+
+#menu > div:first-child + div{
+  display:grid;
+  border-radius: 10px;
+  grid-template-columns: repeat(2, 600px);
+  grid-template-rows: repeat(4, 250px);
+  background-color: rgba(255, 68, 68, 0.28);
+  padding: 20px 80px;
+  margin-bottom: 40px;
+  gap: 50px;
+}
+
+[menuitem]{
+  display:flex;
+  align-items: center;
+  padding: 10px;
+  gap: 25px;
+}
+
+[menuImage]{
+  width: calc(5rem + 8vw);
+  height: calc(5rem + 8vw);
+}
+
+.namePrice{
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.namePrice > h4 {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.namePrice > h3 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.itemContent > p {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.contactBox{
+  display:flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.contactBox > div {
+  font-size: 25px;
+  color: rgb(231, 214, 214);
+}
